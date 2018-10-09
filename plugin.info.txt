@@ -1,0 +1,7 @@
+base   markdownx
+author Jinsung Oh
+email  econquer@gmail.com
+date   2018-10-09
+name   MarkdownX
+desc   Integrated markdown syntax plugin
+url    https://github.com/econquer/dokuwiki-plugin-markdownx
