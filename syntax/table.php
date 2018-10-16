@@ -104,7 +104,7 @@ class syntax_plugin_markdownx_table extends DokuWiki_Syntax_Plugin {
             for($j=0;$j<$cellCount;$j++) {
                 $cell = $cells[$j];
                 if ($aligns[$j][1]) {
-                    $handler->_addCall('table_align', array(), $pos);
+                    $handler->_addCall('table_align', array('  '), $pos);
                 }
 
                 $calls = get_instructions($cell, $types);
@@ -113,7 +113,7 @@ class syntax_plugin_markdownx_table extends DokuWiki_Syntax_Plugin {
                 }
 
                 if ($aligns[$j][0]) {
-                    $handler->_addCall('table_align', array(), $pos);
+                    $handler->_addCall('table_align', array('  '), $pos);
                 }
                 $handler->_addCall($celltype, array(), $pos);
             }
