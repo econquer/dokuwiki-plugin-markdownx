@@ -61,7 +61,7 @@ class syntax_plugin_markdownx_table extends DokuWiki_Syntax_Plugin {
     function getAllowedTypes() { return array('formatting', 'substition', 'disabled', 'protected'); }
   
     function connectTo($mode) {
-        $cellPattern = '(?:[ \t]*(?:[^\^\n]*\|)+[^\^\n]*\n)';
+        $cellPattern = '(?:[ \t]*(?:[^\n]*\|)+[^\n]*\n)';
         $headerPattern = '(?:[ \t]*\|?(?::?-+:?\|)+(?::?-+:?)?|(?::?-+:?)?(?:\|:?-+:?)+)\n';
 
         $tablePattern = $cellPattern.$headerPattern.$cellPattern.'*';
